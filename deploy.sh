@@ -1,13 +1,13 @@
 # Build latest production images
-docker build \ 
-  -t andystoica/fancyfib-client:latest \
-  -t andystoica/fancyfib-client:$SHA \
-  -f ./client/Dockerfile ./client
-
 docker build \
   -t andystoica/fancyfib-api:latest \
   -t andystoica/fancyfib-api:$SHA \
   -f ./api/Dockerfile ./api
+
+docker build \
+  -t andystoica/fancyfib-client:latest \
+  -t andystoica/fancyfib-client:$SHA \
+  -f ./client/Dockerfile ./client
 
 docker build \
   -t andystoica/fancyfib-worker:latest \
