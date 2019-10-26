@@ -30,8 +30,10 @@ before_install:
 script:
   # Run tests
   - docker run -e CI=true andystoica/client-test npm run test
-# deploy:
-#   provider: script
-#   script: bash ./deploy.sh
-#   on:
-#     branch: master
+
+deploy:
+  # Run external script to complete the deployment process
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: master
