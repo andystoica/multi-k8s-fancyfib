@@ -19,7 +19,7 @@ class App extends Component {
           <div className="ui divider"></div>
           <h1 className="ui icon header" id="title">
             <i className="settings icon"></i>
-            <div className="contents">Fancy Fibonacci App</div>
+            <div className="contents">Fancy Fibonacci K8s</div>
           </h1>
           <div>
             <Route exact path="/" component={Fib} />
