@@ -1,0 +1,1 @@
+docker build -t andystoica/fancyfib-client -f ./client/Dockerfile ./client
